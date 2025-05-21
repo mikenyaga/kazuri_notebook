@@ -119,16 +119,38 @@ Kazuri integrates two powerful security tools: Bandit and Safety. These tools he
 
 ### Running Security Checks
 
-To run the security checks, use the `security_check.py` script in the root directory of the project:
+Before running the security checks, make sure you have Bandit and Safety installed in your current environment:
 
 ```bash
-python security_check.py
+pip install bandit safety
 ```
+
+To run the security checks, you can use the `security_check.py` script in the root directory of the project. Here are different ways to run it:
+
+1. From the command line:
+   ```bash
+   python security_check.py
+   ```
+
+2. From within a Jupyter notebook cell:
+   ```python
+   %run security_check.py
+   ```
+
+3. By importing and running the checks function:
+   ```python
+   from security_check import run_checks
+   run_checks()
+   ```
 
 This script will:
 
 1. Run Bandit to perform a security analysis of your Python code.
 2. Run Safety to check your dependencies for known security vulnerabilities.
+
+The script uses the current Python interpreter, ensuring it works within your Jupyter notebook environment.
+
+If Bandit or Safety are not installed in your current environment, the script will provide an error message indicating that you need to install them.
 
 It's recommended to run these checks regularly, especially before deploying your code or after adding new dependencies.
 
