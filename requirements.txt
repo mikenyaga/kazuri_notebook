@@ -5,3 +5,5 @@ requests>=2.25.0
 ipython>=7.0.0
 python-dotenv>=0.15.0
 backports.tarfile==1.2.0
+bandit>=1.7.0
+safety>=2.0.0

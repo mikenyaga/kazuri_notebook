@@ -113,6 +113,32 @@ kazuri("Create a function that calculates the factorial of a number")
 
 The generated code will be automatically inserted into the next cell of your Jupyter notebook as executable Python code.
 
+## Security Checks
+
+Kazuri integrates two powerful security tools: Bandit and Safety. These tools help ensure the security of your code and dependencies.
+
+### Running Security Checks
+
+To run the security checks, use the `security_check.py` script in the root directory of the project:
+
+```bash
+python security_check.py
+```
+
+This script will:
+
+1. Run Bandit to perform a security analysis of your Python code.
+2. Run Safety to check your dependencies for known security vulnerabilities.
+
+It's recommended to run these checks regularly, especially before deploying your code or after adding new dependencies.
+
+### Understanding the Results
+
+- Bandit will report any potential security issues in your code, along with their severity and confidence levels.
+- Safety will alert you to any known vulnerabilities in your project's dependencies.
+
+If any issues are found, review the output carefully and address the concerns as needed. This may involve updating dependencies, refactoring code, or implementing additional security measures.
+
 ## Example
 
 Here's an example of how to use Kazuri:
