@@ -28,7 +28,7 @@ Kazuri is not available on PyPI. To install it, you need to clone the repository
 
 4. Clone the repository:
    ```
-   git clone https://github.com/your-username/kazuri.git
+   git clone https://github.com/hillaryhitch/kazuri_notebook.git
    cd kazuri
    ```
 
