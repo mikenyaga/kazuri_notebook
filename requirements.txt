@@ -1,0 +1,7 @@
+setuptools>=58.0.0
+wheel>=0.37.0
+boto3>=1.17.0
+requests>=2.25.0
+ipython>=7.0.0
+python-dotenv>=0.15.0
+backports.tarfile==1.2.0

@@ -1,0 +1,4 @@
+boto3>=1.17.0
+requests>=2.25.0
+ipython>=7.0.0
+python-dotenv>=0.15.0
