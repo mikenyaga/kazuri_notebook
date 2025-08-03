@@ -11,7 +11,8 @@ def load_config() -> Dict[str, str]:
     """
     print("Starting to load configuration...")
     # Load environment variables from .env file if it exists
-    load_dotenv()
+    # load_dotenv()
+    load_dotenv("/User/kazuri_notebook/kazuri/.env")
     print(f"Loaded .env file. Current working directory: {os.getcwd()}")
 
     config = {
